@@ -14,6 +14,9 @@ const App = () => {
       console.log("running")
       setTasks(data);
     }
+    else{
+      localStorage.setItem("Tasks", [])
+    }
   }, []);
 
   useEffect(() => {
