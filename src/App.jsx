@@ -10,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem('Tasks'));
-    if (data.length > 0) {
+    if (data && data.length > 0) {
       console.log("running")
       setTasks(data);
     }
